@@ -1,4 +1,4 @@
-INSERT INTO pharmacy(code, name, legal_start_date, legal_end_date, address_line_1, address_line_2, address_line_3, town, county, postcode)
+INSERT INTO pharmacy(code, name, legal_start_date, legal_end_date, address_line1, address_line2, address_line3, town, county, postcode)
 VALUES ('FA002', 'ROWLANDS PHARMACY', '20060601', null, '61 ARUNDEL AVENUE', 'HAZEL GROVE', null, 'STOCKPORT', 'CHESHIRE', 'SK7 5LD'),
        ('FA007', 'ROWLANDS PHARMACY', '20080301', null, '10, 10A & 10B BENTALLS CENTRE', 'COLCHESTER ROAD', 'HEYBRIDGE', 'MALDON', 'ESSEX', 'CM9 4GD'),
        ('FA008', 'BOOTS', '19960115', '20240109', '49-51 MERRION CENTRE', null, null, 'LEEDS', 'WEST YORKSHIRE', 'LS2 8PJ'),
