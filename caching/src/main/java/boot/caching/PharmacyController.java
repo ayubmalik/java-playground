@@ -1,9 +1,6 @@
 package boot.caching;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,5 +22,10 @@ public class PharmacyController {
     @GetMapping("/{code}")
     Pharmacy getByCode(@PathVariable String code) {
         return pharmacies.findByCode(code);
+    }
+
+    @PostMapping(consumes = "application/json")
+    void addNew(@RequestBody Pharmacy pharmacy) {
+        pharmacies.save(pharmacy);
     }
 }
