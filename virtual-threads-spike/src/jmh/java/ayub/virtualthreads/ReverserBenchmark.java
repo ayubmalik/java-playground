@@ -14,7 +14,7 @@ public class ReverserBenchmark {
     @Benchmark
     @BenchmarkMode({Mode.AverageTime, Mode.Throughput})
     public String reverse() {
-        return reverser.reverser("Hello, world!");
+        return reverser.reverse("Hello, world!");
     }
 
 }

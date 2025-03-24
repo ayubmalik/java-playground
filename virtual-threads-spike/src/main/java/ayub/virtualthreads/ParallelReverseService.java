@@ -12,7 +12,7 @@ public class ParallelReverseService implements ReverseService {
     @Override
     public List<String> reverse(List<String> sources) {
         return sources.parallelStream().
-                map(reverser::reverser)
+                map(reverser::reverse)
                 .toList();
     }
 }

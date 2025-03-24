@@ -36,7 +36,7 @@ public class VirtualThreadReverseService implements ReverseService {
 
     private List<Future<String>> submitAll(ExecutorService executor, List<String> sources) {
         return sources.stream()
-                .map(s -> executor.submit(() -> reverser.reverser(s)))
+                .map(s -> executor.submit(() -> reverser.reverse(s)))
                 .toList();
     }
 }

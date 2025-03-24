@@ -8,8 +8,8 @@ class SimpleReverserTest {
 
     @Test
     void reverse() {
-        assertEquals("olleH", new SimpleReverser().reverser("Hello"));
-        assertEquals("!mum olleH", new SimpleReverser().reverser("Hello mum!"));
+        assertEquals("olleH", new SimpleReverser().reverse("Hello"));
+        assertEquals("!mum olleH", new SimpleReverser().reverse("Hello mum!"));
     }
 
 }
