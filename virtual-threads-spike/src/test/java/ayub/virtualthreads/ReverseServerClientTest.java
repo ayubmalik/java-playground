@@ -3,7 +3,6 @@ package ayub.virtualthreads;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
@@ -33,14 +32,14 @@ class ReverseServerClientTest {
         assertEquals(param.expected(), actual);
     }
 
-    static Stream<? extends Arguments> reverseParams() {
+    static Stream<TestParam> reverseParams() {
         return Stream.of(
                 new TestParam("example", "elpmaxe"),
                 new TestParam("java", "avaj"),
                 new TestParam("virtual", "lautriv"),
                 new TestParam("threads", "sdaerht"),
                 new TestParam("hello world!", "!dlrow olleh")
-        ).map(Arguments::of);
+        );
     }
 
     record TestParam(String input, String expected) {
