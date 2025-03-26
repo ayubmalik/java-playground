@@ -6,18 +6,16 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.time.Duration;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 
 import static java.net.URLEncoder.encode;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-public class ReverseServerClient implements Reverser {
+public class HttpStringReverser implements StringReverser {
 
     private final String baseUrl;
     private final HttpClient client;
 
-    public ReverseServerClient(String baseUrl) {
+    public HttpStringReverser(String baseUrl) {
         this.baseUrl = baseUrl;
         this.client = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofMillis(30))

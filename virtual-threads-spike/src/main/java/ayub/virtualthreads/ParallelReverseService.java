@@ -3,9 +3,9 @@ package ayub.virtualthreads;
 import java.util.List;
 
 public class ParallelReverseService implements ReverseService {
-    private final SimpleReverser reverser;
+    private final StringBuilderReverser reverser;
 
-    public ParallelReverseService(SimpleReverser reverser) {
+    public ParallelReverseService(StringBuilderReverser reverser) {
         this.reverser = reverser;
     }
 

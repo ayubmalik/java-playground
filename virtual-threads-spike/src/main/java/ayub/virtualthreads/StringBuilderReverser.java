@@ -1,6 +1,6 @@
 package ayub.virtualthreads;
 
-public class SimpleReverser implements Reverser {
+public class StringBuilderReverser implements StringReverser {
 
     @Override
     public String reverse(String source) {

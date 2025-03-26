@@ -11,7 +11,7 @@ class VirtualThreadReverseServiceTest {
     private final List<String> source = List.of("The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog");
     private final List<String> expected = List.of("ehT", "kciuq", "nworb", "xof", "spmuj", "revo", "eht", "yzal", "god");
 
-    private final ReverseService service = new VirtualThreadReverseService(new SimpleReverser());
+    private final ReverseService service = new VirtualThreadReverseService(new StringBuilderReverser());
 
     @Test
     void reverse() {

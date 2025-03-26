@@ -9,11 +9,11 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ReverseServerClientTest {
+class HttpStringReverserTest {
 
     private final ReverseServer server = new ReverseServer();
 
-    private final ReverseServerClient client = new ReverseServerClient("http://localhost:9090");
+    private final HttpStringReverser client = new HttpStringReverser("http://localhost:9090");
 
     @BeforeEach
     void setup() {

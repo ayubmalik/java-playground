@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class AsyncReverseService implements ReverseService {
-    private final SimpleReverser reverser;
+    private final StringBuilderReverser reverser;
 
-    public AsyncReverseService(SimpleReverser reverser) {
+    public AsyncReverseService(StringBuilderReverser reverser) {
         this.reverser = reverser;
     }
 

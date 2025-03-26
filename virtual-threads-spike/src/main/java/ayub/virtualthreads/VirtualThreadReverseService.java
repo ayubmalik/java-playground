@@ -8,9 +8,9 @@ import java.util.concurrent.Future;
 
 public class VirtualThreadReverseService implements ReverseService {
 
-    private final SimpleReverser reverser;
+    private final StringReverser reverser;
 
-    public VirtualThreadReverseService(SimpleReverser reverser) {
+    public VirtualThreadReverseService(StringReverser reverser) {
         this.reverser = reverser;
     }
 

@@ -1,5 +1,5 @@
 package ayub.virtualthreads;
 
-public interface Reverser {
+public interface StringReverser {
     String reverse(String source);
 }

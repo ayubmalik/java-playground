@@ -1,18 +1,15 @@
 package ayub.virtualthreads;
 
 import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Benchmark)
-public class ReverserBenchmark {
+public class StringBuilderReverserBenchmark {
 
-    private final SimpleReverser reverser = new SimpleReverser();
+    private final StringReverser reverser = new StringBuilderReverser();
 
     @Benchmark
-    @BenchmarkMode({Mode.AverageTime, Mode.Throughput})
     public String reverse() {
         return reverser.reverse("Hello, world!");
     }
